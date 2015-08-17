@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>LandX</title>
+<link href="css/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/form.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.4.5.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+ 
+<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+</head>
+
+<body>
+<div data-role="page" id="page">
+  <div data-role="panel" id="myPanel">
+    <ul data-role="listview" data-filter="true" data-filter-placeholder="Tìm..." data-inset="true">
+    	<li><a href="#page" data-icon="home" >Trang chủ</a></li>
+        <li><a href="#page2" data-icon="star" >Game offline</a></li>
+        <li><a href="#page3" data-icon="grid" >Game online</a></li>
+        <li><a href="#page4" data-icon="phone" >Đăng nhập</a></li>
+    </ul>
+    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-left ui-btn-inline" data-rel="close">Đóng Menu</a> </div>
+  <div data-role="header"> <img src="images/logo-dark@2x.png" alt="jQuery Mobile" width="208" height="59" id="logo">
+    <div id="panel"><a href="#myPanel" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext"></a></div>
+    <div data-role="navbar" data-iconpos="left" id="nav">
+      <ul>
+        <li><a href="#page" class="ui-btn-active ui-state-persist" data-icon="home" >Trang chủ</a></li>
+        <li><a href="#page2" data-icon="star" >Game offline</a></li>
+        <li><a href="#page3" data-icon="grid" >Game online</a></li>
+        <li><a href="#page4" data-icon="phone" >Đăng nhập</a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="content">
+      <ul data-role="listview" data-filter="true" data-filter-placeholder="Tìm..." data-inset="true">
+  <div class="rwd-example">
+    <!-- Lead story block -->
+    <div class="ui-block-a">
+        <div class="ui-body ui-body-d">
+</div>
+    </div>
+    <div class="ui-block-b">
+    </div>
+    <ul data-role="listview" data-inset="true">
+    <li><a href="#">
+        <img src="images/nugamethu.jpg">
+    <h2>Những nữ game thủ Việt vừa xinh đẹp vừa học giỏi</h2>
+    <p>Không chỉ là những sinh viên tại những trường đại học hàng đầu hiện nay tại Việt Nam, những cô gái này đều là những nữ game thủ có cùng sở thích chơi game, và đều nổi tiếng trong cộng đồng và được nhiều người biết đến.</p></a>
+    </li>
+    <li><a href="#">
+        <img src="images/quat.jpg">
+    <h2>Các loại tản nhiệt khí CPU giá rẻ đáng mua cho game thủ Việt</h2>
+    <p>Chúng tôi xin giới thiệu tới game thủ một số loại tản nhiệt khí có giá thành rẻ, dưới 600 ngàn đồng cho các bạn độc giả tham khảo.</p></a>
+    </li>
+    <li><a href="#">
+        <img src="images/dragon.jpg">
+    <h2>Dragon Blaze - Game cực hot khiến game thủ Việt mong ngóng</h2>
+    <p>Dragon Blaze chuẩn bị ra mắt phiên bản tiếng Việt và được game thủ nước nhà rất yêu thích, mong chờ ngày mở cửa.</p></a>
+    </li>
+</ul>
+<div class="ui-block-c">
+        <div class="ui-body ui-body-d">
+        </div>
+    </div>
+</div><!-- /rwd-example -->
+  </div>  
+  <div data-role="footer">
+    <h4><em>Huylvpd01009-Coppyright BeLoster 2015</em></h4>
+  </div>
+</div>
+<div data-role="page" id="page2">
+  <div data-role="panel" id="myPanel2">
+    <ul data-role="listview" data-filter="true" data-filter-placeholder="Tìm..." data-inset="true">
+    	<li><a href="#page" data-icon="home" >Trang chủ</a></li>
+        <li><a href="#page2" data-icon="star" >Game offline</a></li>
+        <li><a href="#page3" data-icon="grid" >Game online</a></li>
+        <li><a href="#page4" data-icon="phone" >Đăng nhập</a></li>
+    </ul>
+    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-left ui-btn-inline" data-rel="close">Đóng Menu</a> </div>
+<div data-role="header"> <img src="images/logo-dark@2x.png" alt="jQuery Mobile" width="208" height="59" id="logo">
+    <div id="panel"><a href="#myPanel2" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext"></a></div>
+   <div data-role="navbar" data-iconpos="left" id="nav">
+      <ul>
+        <li><a href="#page" data-icon="home" >Trang chủ</a></li>
+        <li><a href="#page2" class="ui-btn-active ui-state-persist" data-icon="star" >Game offline</a></li>
+        <li><a href="#page3" data-icon="grid" >Game online</a></li>
+        <li><a href="#page4" data-icon="phone" >Đăng nhập</a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="content">
+      <ul data-role="listview" data-filter="true" data-filter-placeholder="Tìm..." data-inset="true"> 
+<p><strong>Game offline</strong></p>
+<ul data-role="listview" data-split-icon="gear" data-split-theme="a" data-inset="true">
+    <li><a href="#">
+        <img src="images/subway.png">
+    <h2>Subway Surfers</h2>
+    <p>DASH as fast as you can! DODGE the oncoming trains! Help Jake, Tricky & Fresh escape from the grumpy Inspector and his dog. ★ Grind trains with your cool crew! ★ Colorful and vivid HD graphics! ★ Hoverboard Surfing! ★ Paint powered jetpack! ★ Lightning fast swipe acrobatics! ★ Challenge and help your friends! Join the most daring chase! A Universal App with HD optimized graphics. By Kiloo Games and Sybo Games</p></a>
+        <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+    </li>
+    <li><a href="#">
+        <img src="images/spider.png">
+    <h2>The Amazing Spider-Man 2</h2>
+    <p>Trở thành Người Nhện Siêu Đẳng trong hành trình thế giới mở 3D đầy hành động không ngừng để chống tội phạm này và đối đầu với thử thách lớn nhất của vị anh hùng bắn tơ nhện! New York đang chịu sự đe dọa của băng đảng tội phạm ở khắp thành phố và chỉ có anh hùng Người Nhện mới ngăn cản được việc này! Venom, Green Goblin, Electro và những kẻ hung ác khác đang ngáng đường anh. Liệu Người Nhện có thể lập lại trật tự và an toàn cho Manhattan không?! </p></a>
+        <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+    </li>
+    <li><a href="#">
+        <img src="images/pes.png">
+    <h2>PES 2012 (Mod PES 2015)</h2>
+    <p>Pro Evolution Soccer PES 2012 hứa hẹn sẽ là một phiên bản hoàn toàn mới với nhiều cải tiến từ nhà sản xuất Konami. Trong các phiên bản trước, Pro Evolution Soccer PES dường như luôn bị xếp sau FIFA của Electronic Arts. Nhưng với phiên bản 2012, PES đã được nâng cấp đáng kể với việc mua lại bản quyền 2 giải đấu danh giá nhất hành tinh là Champion League và UEFA Europa Legue. Đây là một trong những điểm giúp PES 2012 chiếm ưu thế vượt trội so với đối thủ của mình. </p></a>
+        <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+    </li>
+</ul>
+<div data-role="popup" id="purchase" data-theme="a" data-overlay-theme="b" class="ui-content" style="max-width:340px; padding-bottom:2em;">
+    <h3>Chúc các bạn có thời gian giải trí vui vẻ</h3>
+<p>Trò chơi đang được tải về máy bạn.</p>
+    <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini">Tải game</a>
+    <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">Hủy</a>
+</div>
+</ul>
+  </div>
+<div data-role="footer">
+  <h4><em>Huylvpd01009-Coppyright BeLoster 2015</em></h4>
+  </div>
+</div>
+<div data-role="page" id="page3">
+  <div data-role="panel" id="myPanel3">
+    <ul data-role="listview" data-filter="true" data-filter-placeholder="Tìm..." data-inset="true">
+    	<li><a href="#page" data-icon="home" >Trang chủ</a></li>
+        <li><a href="#page2" data-icon="star" >Game offline</a></li>
+        <li><a href="#page3" data-icon="grid" >Game online</a></li>
+        <li><a href="#page4" data-icon="phone" >Đăng nhập</a></li>
+    </ul>
+    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-left ui-btn-inline" data-rel="close">Đóng Menu</a> </div>
+<div data-role="header"> <img src="images/logo-dark@2x.png" alt="jQuery Mobile" width="208" height="59" id="logo">
+    <div id="panel"><a href="#myPanel3" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext"></a></div>
+    <div data-role="navbar" id="nav">
+      <ul>
+    	<li><a href="#page" data-icon="home" >Trang chủ</a></li>
+        <li><a href="#page2" data-icon="star" >Game offline</a></li>
+        <li><a href="#page3" class="ui-btn-active ui-state-persist" data-icon="grid" >Game online</a></li>
+        <li><a href="#page4" data-icon="phone" >Đăng nhập</a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="content">
+      <ul data-role="listview" data-filter="true" data-filter-placeholder="Tìm..." data-inset="true">
+	<fieldset data-role="controlgroup" data-mini="true">
+    <p><strong>Game online </strong></p>
+    <ul data-role="listview" data-split-icon="gear" data-split-theme="a" data-inset="true">
+    <li><a href="#">
+        <img src="images/dota.png">
+    <h2>Dota truyền kỳ :Heroes DoTa Mobile</h2>
+    <p>Dota Truyền Kỳ (DotaTK) là siêu phẩm game mobile bom tấn do VNG phát hành. Điểm nhấn của game đến từ nền đồ họa tươi sáng, Gameplay mới lạ người chơi sẽ "Chạm" vào để tung ra các Skill đặc biệt của mình. Heroes thân thuộc trong DoTa được hóa thân với hình ảnh 2D đi theo lối hoạt họa Thể hiện đầy đủ với 3 nhóm: Tank, Nuke, Carry. 
+Dàn sao nổi tiếng hóa thân vào "giọng nói" của các vị tướng DoTa: Hari Won (RyLai), Andrea (Traxex), Bà Tưng (Akasha), Đông Nhi (Lina), Don Nguyễn (Kunkka), Pew Pew (Kael) Minh Béo (Mangix), Gia Bảo (Rigwarl) ... 
+Dota Truyền Kỳ cũng đang là trào lưu mới cho thể loại Card Battle Game.</p></a>
+        <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+    </li>
+    <li><a href="#">
+        <img src="images/iga.jpeg">
+    <h2>Game iGa - Vua game bắn súng tọa độ trên smartphone.</h2>
+    <p>Nếu bạn đã quen với những game gunny hay gunbond trên máy tính thì giờ đây nhà phát hành game Soha đã ra mắt game iGa nói đúng hơn là Gunny mobile trên những smartphone của bạn.</p></a>
+        <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+    </li>
+    <li><a href="#">
+        <img src="images/daiphaquan.PNG">
+    <h2>Đại phá quân</h2>
+    <p>Đại Pháo Quân là game mobile thuộc thể loại Card Battle do Stim Dreams sản xuất. Game đã alpha test giới hạn tại Việt Nam từ ngày 05/02 đến ngày 16/02 và chính thức được Asiasoft mở cửa đón người chơi vào ngày 10/04 vừa qua với nhiều tính năng mới lạ.</p></a>
+        <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+    </li>
+</ul>
+<div data-role="popup" id="purchase" data-theme="a" data-overlay-theme="b" class="ui-content" style="max-width:340px; padding-bottom:2em;">
+    <h3>Chúc các bạn có thời gian giải trí vui vẻ</h3>
+<p>Trò chơi đang được tải về máy bạn.</p>
+    <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini">Tải game</a>
+    <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">Hủy</a>
+</div>
+</fieldset>
+</ul>
+  </div>
+  <div data-role="footer">
+    <h4><em>Huylvpd01009-Coppyright BeLoster 2015</em></h4>
+  </div>
+</div>
+<div data-role="page" id="page4">
+  <div data-role="panel" id="myPanel4">
+    <ul data-role="listview" data-filter="true" data-filter-placeholder="Tìm..." data-inset="true">
+    	<li><a href="#page" data-icon="home" >Trang chủ</a></li>
+        <li><a href="#page2" data-icon="star" >Game offline</a></li>
+        <li><a href="#page3" data-icon="grid" >Game online</a></li>
+        <li><a href="#page4" data-icon="phone" >Đăng nhập</a></li>
+    </ul>
+    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-left ui-btn-inline" data-rel="close">Đóng Menu</a> </div>
+  <div data-role="header"> <img src="images/logo-dark@2x.png" alt="jQuery Mobile" width="208" height="59" id="logo">
+    <div id="panel"><a href="#myPanel4" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext"></a></div>
+    <div data-role="navbar" id="nav">
+      <ul>
+    	<li><a href="#page" data-icon="home" >Trang chủ</a></li>
+        <li><a href="#page2" data-icon="star" >Game offline</a></li>
+        <li><a href="#page3" data-icon="grid" >Game online</a></li>
+        <li><a href="#page4" class="ui-btn-active ui-state-persist" data-icon="phone" >Đăng nhập</a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="content">
+<form>Tên đăng nhập<input type="text"></form>
+<form>Mật khẩu<input type="password"></form>
+<form><input type="submit" value="Đăng nhập"</form>
+  </div>
+  <div data-role="footer">
+    <h4><em>Huylvpd01009-Coppyright BeLoster 2015</em></h4>
+  </div>
+</div>
+<div data-role="page" id="chitiet">
+  <div data-role="panel" id="myPanel5">
+    <ul data-role="listview" data-filter="true" data-filter-placeholder="Tìm..." data-inset="true">
+    	<li><a href="#page" data-icon="home" >Trang chủ</a></li>
+        <li><a href="#page2" data-icon="star" >Game offline</a></li>
+        <li><a href="#page3" data-icon="grid" >Game online</a></li>
+        <li><a href="#page4" data-icon="phone" >Đăng nhập</a></li>
+    </ul>
+    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-left ui-btn-inline" data-rel="close">Đóng Menu</a> </div>
+<div data-role="header"> <img src="images/logo-dark@2x.png" alt="jQuery Mobile" width="208" height="59" id="logo">
+    <div id="panel"><a href="#myPanel5" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext"></a></div>
+    <div data-role="navbar" id="nav">
+      <ul>
+    	<li><a href="#page" data-icon="home" >Trang chủ</a></li>
+        <li><a href="#page2" data-icon="star" >Game offline</a></li>
+        <li><a href="#page3" data-icon="grid" >Game online</a></li>
+        <li><a href="#page4" data-icon="phone" >Đăng nhập</a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="content">
+  </div>
+  <div data-role="footer">
+    <h4><em>Huylvpd01009-Coppyright BeLoster 2015</em></h4>
+  </div>
+</div>
+<script>
+$('a').each(function() {
+    $(this).attr('data-transition','slide'); 
+});
+</script>
+</body>
+</html>
